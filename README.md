@@ -57,6 +57,19 @@ All commands are available as slash commands inside Claude Code. Use the short f
 
 > **Note:** If your Claude Code version requires the fully-qualified form, prefix any command with `project:` — e.g. `/project:squad-delegate`.
 
+### CLI Commands
+
+The `squad` CLI handles scaffolding. Run these from your terminal, not inside Claude Code.
+
+| Command | Description |
+|---|---|
+| `squad init` | Bootstrap Squad in the current project |
+| `squad update` | Update framework files to the latest version — never touches agent charters, decisions, or memory |
+| `squad status` | Show active agents and decision count |
+| `squad version` | Print the installed version |
+
+`squad update` is safe to run anytime. It overwrites only framework-owned files (`.ai-team/SQUAD.md` and all `.claude/commands/squad-*.md`) and leaves your team's state untouched.
+
 ---
 
 ## Project Structure
@@ -77,6 +90,7 @@ your-project/
 │       └── tester.log.md
 └── .claude/
     └── commands/
+        ├── squad-brief.md
         ├── squad-hire.md
         ├── squad-fire.md
         ├── squad-run.md
