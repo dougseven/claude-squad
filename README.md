@@ -46,6 +46,7 @@ All commands are available as slash commands inside Claude Code. Use the short f
 
 | Command | Description |
 |---|---|
+| `/squad-brief [doc or goal]` | Give the team a mission — builds a phased plan, confirms, then executes |
 | `/squad-hire [role]` | Create a new agent with a scoped charter |
 | `/squad-fire [role]` | Retire an agent (moves to alumni, knowledge preserved) |
 | `/squad-run [role] "[task]"` | Dispatch a task to a specific agent |
@@ -88,6 +89,17 @@ your-project/
 ---
 
 ## How It Works
+
+### Giving the Team a Mission
+
+To hand the team a high-level directive — a spec doc, a goal, a product brief — use `/squad-brief`:
+
+```
+/squad-brief resources/Technical_Implementation_Guide.md
+/squad-brief "add full-text search to the API"
+```
+
+The Coordinator reads the mission, builds a phased execution plan mapped to the right agents, shows you the plan for approval, then executes phase by phase. Use `/squad-delegate` for a single task you've already scoped; use `/squad-brief` when the work needs to be decomposed first.
 
 ### The Task Tool is the Engine
 
