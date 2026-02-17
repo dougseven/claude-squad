@@ -1,0 +1,33 @@
+{
+  "name": "claude-squad",
+  "version": "0.1.0",
+  "description": "AI agent teams for Claude Code — persistent, role-based, memory-driven",
+  "main": "bin/squad.js",
+  "bin": {
+    "squad": "bin/squad.js"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ai",
+    "agents",
+    "multi-agent",
+    "developer-tools"
+  ],
+  "author": "Doug Seven <doug@dougseven.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougseven/claude-squad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dougseven/claude-squad/issues"
+  },
+  "homepage": "https://github.com/dougseven/claude-squad#readme"
+}
