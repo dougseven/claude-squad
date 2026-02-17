@@ -175,7 +175,6 @@ function status() {
     return;
   }
 
-  const { readdirSync, statSync } = await import('fs');
   const agents = readdirSync(agentsDir)
     .filter(f => f.endsWith('.md') && f !== '_alumni');
   
