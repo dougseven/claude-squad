@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "AI agent teams for Claude Code — persistent, role-based, memory-driven",
   "main": "bin/squad.js",
+  "type": "module",
   "bin": {
     "squad": "bin/squad.js"
   },
