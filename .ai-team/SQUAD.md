@@ -50,7 +50,7 @@ When complete, summarize:
 
 ## Routing Rules
 
-When a task arrives via `/project:squad-delegate`, reason about which agent 
+When a task arrives via `/squad-delegate`, reason about which agent
 owns the relevant domain. If ambiguous, prefer the agent with the most 
 relevant history. For parallelizable tasks (e.g., frontend + backend work 
 that doesn't depend on each other), spawn multiple Task agents concurrently.
@@ -99,7 +99,7 @@ Memory entries format:
 ## Context Budget
 
 Monitor token usage. When agent charter files grow large:
-- Use `/project:squad-prune` to compress histories
+- Use `/squad-prune` to compress histories
 - Keep decisions.md tight — decisions, not implementation details
 - Agent charters should be <2000 tokens each
 

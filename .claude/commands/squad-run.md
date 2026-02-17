@@ -1,8 +1,8 @@
-# /project:squad-run
+# /squad-run
 
 Dispatch a task to a specific agent.
 
-**Usage**: `/project:squad-run [role] "[task description]"`
+**Usage**: `/squad-run [role] "[task description]"`
 
 **Arguments received**: $ARGUMENTS
 

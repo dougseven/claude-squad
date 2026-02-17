@@ -42,18 +42,19 @@ Claude will automatically load `CLAUDE.md`, which includes the Squad Coordinator
 
 ## Commands
 
-All commands are available as `/project:` slash commands inside Claude Code.
+All commands are available as slash commands inside Claude Code. Use the short form `/squad-*` (Claude Code project commands drop the `project:` namespace prefix when invoked).
 
 | Command | Description |
 |---|---|
-| `/project:squad-init` | Bootstrap Squad in a new project |
-| `/project:squad-hire [role]` | Create a new agent with a scoped charter |
-| `/project:squad-fire [role]` | Retire an agent (moves to alumni, knowledge preserved) |
-| `/project:squad-run [role] "[task]"` | Dispatch a task to a specific agent |
-| `/project:squad-delegate "[task]"` | Auto-route a task to the best-fit agent |
-| `/project:squad-status` | Show team dashboard — agents, memory, decisions |
-| `/project:squad-review [role] "[artifact]"` | Route work to a reviewer (Lead or Tester) |
-| `/project:squad-prune` | Compress agent histories to reduce context bloat |
+| `/squad-hire [role]` | Create a new agent with a scoped charter |
+| `/squad-fire [role]` | Retire an agent (moves to alumni, knowledge preserved) |
+| `/squad-run [role] "[task]"` | Dispatch a task to a specific agent |
+| `/squad-delegate "[task]"` | Auto-route a task to the best-fit agent |
+| `/squad-status` | Show team dashboard — agents, memory, decisions |
+| `/squad-review [role] "[artifact]"` | Route work to a reviewer (Lead or Tester) |
+| `/squad-prune` | Compress agent histories to reduce context bloat |
+
+> **Note:** If your Claude Code version requires the fully-qualified form, prefix any command with `project:` — e.g. `/project:squad-delegate`.
 
 ---
 
@@ -90,7 +91,7 @@ your-project/
 
 ### The Task Tool is the Engine
 
-When you run `/project:squad-run backend "add rate limiting to the API"`, the Coordinator spawns a Claude Code **Task tool** subagent seeded with:
+When you run `/squad-run backend "add rate limiting to the API"`, the Coordinator spawns a Claude Code **Task tool** subagent seeded with:
 1. The backend agent's charter (their domain, constraints, past decisions)
 2. The current `decisions.md` (the team's constitution)
 3. The specific task
@@ -132,7 +133,7 @@ claude-squad ships with templates for common roles:
 | Platform | GitHub Copilot CLI + VS Code | Claude Code CLI |
 | Coordinator trigger | `squad.agent.md` | `SQUAD.md` via `CLAUDE.md` |
 | Agent spawning | `task` tool + `/delegate` | Claude Code Task tool |
-| Slash commands | `/delegate`, `/hire`, `/fire` | `/project:squad-*` |
+| Slash commands | `/delegate`, `/hire`, `/fire` | `/squad-*` |
 | GitHub integration | `gh` CLI required | Optional |
 | Notifications | MCP (Teams, iMessage, Discord) | MCP (bring your own) |
 

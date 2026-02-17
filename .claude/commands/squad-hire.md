@@ -1,4 +1,4 @@
-# /project:squad-hire
+# /squad-hire
 
 Create a new Squad agent for the role: **$ARGUMENTS**
 

@@ -10,7 +10,7 @@ decisions. No agent may override them without Coordinator approval.
 - Decisions are added by the Coordinator after agent work completes
 - Format: `## [YYYY-MM-DD] Decision Title`
 - Each decision should be 1-3 sentences — what was decided and why
-- When this file exceeds ~500 lines, run `/project:squad-prune`
+- When this file exceeds ~500 lines, run `/squad-prune`
 
 ---
 

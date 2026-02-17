@@ -5,12 +5,12 @@
  * 
  * Usage:
  *   squad init              — Bootstrap Squad in the current project
- *   squad status            — Show team dashboard (same as /project:squad-status)
- *   squad hire [role]       — Add an agent (same as /project:squad-hire)
- *   squad fire [role]       — Retire an agent (same as /project:squad-fire)
+ *   squad status            — Show team dashboard (same as /squad-status)
+ *   squad hire [role]       — Add an agent (same as /squad-hire)
+ *   squad fire [role]       — Retire an agent (same as /squad-fire)
  *   squad version           — Print version
- * 
- * Most commands are designed to be run inside Claude Code as /project:squad-*
+ *
+ * Most commands are designed to be run inside Claude Code as /squad-*
  * slash commands. The CLI provides scaffolding and utilities.
  */
 
@@ -38,7 +38,7 @@ Commands:
   version           Print version
   help              Show this help
 
-Most orchestration happens inside Claude Code via /project:squad-* commands.
+Most orchestration happens inside Claude Code via /squad-* commands.
 Run \`squad init\` first, then open Claude Code in your project.
 
 Examples:
@@ -158,9 +158,9 @@ Your team:
 
 Next steps:
   1. Open Claude Code:        claude
-  2. Check team status:       /project:squad-status
-  3. Add more agents:         /project:squad-hire backend
-  4. Assign your first task:  /project:squad-delegate "describe your task"
+  2. Check team status:       /squad-status
+  3. Add more agents:         /squad-hire backend
+  4. Assign your first task:  /squad-delegate "describe your task"
 
 Docs: https://github.com/dougseven/claude-squad
 `);
@@ -196,7 +196,7 @@ function status() {
   Alumni:         ${alumniCount} (knowledge preserved)
   Decisions:      ${decisionCount} in decisions.md
   ─────────────────────────────────────────
-  Run \`claude\` and use /project:squad-* commands for full orchestration.
+  Run \`claude\` and use /squad-* commands for full orchestration.
 `);
 }
 

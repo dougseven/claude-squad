@@ -1,4 +1,4 @@
-# /project:squad-delegate
+# /squad-delegate
 
 Auto-route a task to the best-fit agent (or agents).
 
@@ -19,7 +19,7 @@ note their domain and authorities.
 ### Step 3: Routing decision
 
 **Single-agent task**: Identify the best fit and use the Task tool to spawn 
-them (same as `/project:squad-run`).
+them (same as `/squad-run`).
 
 **Multi-agent parallel**: If the task decomposes cleanly (e.g., frontend work 
 and backend work with no dependency between them), spawn multiple Task agents 
@@ -44,4 +44,4 @@ Then proceed.
 
 ### Step 5: Collect and synthesize results
 When agents complete, synthesize their reports into a single summary. Update 
-memory and decisions as in `/project:squad-run`.
+memory and decisions as in `/squad-run`.

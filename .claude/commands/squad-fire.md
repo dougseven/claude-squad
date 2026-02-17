@@ -1,4 +1,4 @@
-# /project:squad-fire
+# /squad-fire
 
 Retire the Squad agent: **$ARGUMENTS**
 
@@ -38,6 +38,6 @@ Output:
 - Number of decisions extracted to decisions.md
 - Note that their full history lives in `_alumni/{role}.md`
 
-> Alumni agents are never truly gone. If you need them back, use 
-> `/project:squad-hire {role}` — their history in decisions.md means they'll 
+> Alumni agents are never truly gone. If you need them back, use
+> `/squad-hire {role}` — their history in decisions.md means they'll
 > hit the ground running.

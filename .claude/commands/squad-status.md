@@ -1,4 +1,4 @@
-# /project:squad-status
+# /squad-status
 
 Show a dashboard of the current Squad team.
 
@@ -32,8 +32,8 @@ Read the following files and compile a status report:
   Alumni agents: {N} (knowledge preserved in decisions.md)
   
   QUICK ACTIONS
-  Assign work:  /project:squad-delegate "[task]"
-  Add agent:    /project:squad-hire [role]
+  Assign work:  /squad-delegate "[task]"
+  Add agent:    /squad-hire [role]
   View agent:   read .ai-team/agents/{role}.md
 ──────────────────────────────────────────────────────────
 ```
@@ -41,5 +41,5 @@ Read the following files and compile a status report:
 If `.ai-team/` doesn't exist yet, output:
 ```
 No Squad found in this project. 
-Run: /project:squad-hire lead  (to add your first agent)
+Run: /squad-hire lead  (to add your first agent)
 ```

@@ -1,8 +1,8 @@
-# /project:squad-review
+# /squad-review
 
 Route work to a reviewer agent.
 
-**Usage**: `/project:squad-review [reviewer-role] "[artifact or task description]"`
+**Usage**: `/squad-review [reviewer-role] "[artifact or task description]"`
 
 **Arguments**: $ARGUMENTS
 
@@ -53,8 +53,8 @@ Respond with ONE of:
 
 **APPROVED**: Log approval in the artifact author's memory. Done.
 
-**CHANGES REQUESTED (minor)**: Return changes to the original author agent via 
-`/project:squad-run`.
+**CHANGES REQUESTED (minor)**: Return changes to the original author agent via
+`/squad-run`.
 
 **CHANGES REQUESTED (major) or REJECTED**: 
 - Log rejection in `.ai-team/decisions.md`

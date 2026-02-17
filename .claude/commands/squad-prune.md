@@ -1,4 +1,4 @@
-# /project:squad-prune
+# /squad-prune
 
 Compress agent histories and decisions to reduce context bloat.
 
