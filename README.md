@@ -1,6 +1,9 @@
-# claude-squad 🤝
+# Claude Squad
 
 **AI agent teams for Claude Code.** Inspired by [@bradygaster](https://github.com/bradygaster/squad)'s Squad for GitHub Copilot — rebuilt natively for Claude Code using slash commands, the Task tool, and persistent markdown memory.
+
+[![Status](https://img.shields.io/badge/status-experimental-blueviolet)](#status)
+[![Platform](https://img.shields.io/badge/platform-Claude%20Code-blue)](#how-it-works)
 
 > Think of it like hiring a specialized team. The Coordinator is the project manager who never writes code — they brief specialists, route work, enforce decisions, and make sure the tester can't review their own rejected work.
 
